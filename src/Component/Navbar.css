@@ -1,0 +1,36 @@
+.Navbar {
+    height: 80px;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+}
+  
+.Navbar .logo {
+    margin-left: 20px;
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+.Navbar .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px;
+    color: #ffffff; 
+    cursor: pointer;
+}
+  
+.Navbar .profile #icon {
+    font-size: 40px; 
+  }
+  
+  
+.Navbar .profile a {
+    color: #ffffff; 
+    text-decoration: none;
+}
