@@ -3,14 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 const Meeting = () => {
   const [username, setUsername] = useState("");
-  const [userId, setUserId] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // sessionStorage.setItem("username", username);
-    // sessionStorage.setItem("userId", userId);
-    navigate("/room");
+    sessionStorage.setItem("username", username);
+    navigate("/room"); // Navigate to the room route
   };
 
   return (
@@ -38,30 +36,6 @@ const Meeting = () => {
             }}
           />
         </div>
-
-        <div style={{ marginBottom: "10px" }}>
-          <label
-            htmlFor="userId"
-            style={{ display: "block", marginBottom: "5px" }}
-          >
-            User ID:
-          </label>
-          <input
-            type="text"
-            id="userId"
-            className="form-input"
-            value={userId}
-            onChange={(e) => setUserId(e.target.value)}
-            placeholder="Enter your user ID"
-            style={{
-              width: "100%",
-              padding: "8px",
-              borderRadius: "4px",
-              border: "1px solid #ccc",
-            }}
-          />
-        </div>
-
         <button
           type="submit"
           style={{

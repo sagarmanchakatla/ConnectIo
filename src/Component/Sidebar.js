@@ -29,7 +29,7 @@ function Sidebar() {
           </Link>
         </li>
         <li className="row">
-          <Link to="/room" className="Link">
+          <Link to="/meet" className="Link">
             <div id="icon">
               <CalendarMonthIcon />
             </div>
